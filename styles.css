@@ -1,0 +1,91 @@
+
+body {
+    background-color: turquoise;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    /* footer support */
+    margin-bottom: 100px;
+  }
+
+.container {
+    background-color: azure;
+    /* flex */
+    display: flex;
+    flex-direction: column; /* all elements within are ordered as a column */
+    /* styling and size */
+    width: 60vh;
+    height: 60vh;
+    border-radius: 10px;
+
+    /* center a div  */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.row {
+    display: flex;
+    flex-direction: row; /* all elements within are ordered as a row */
+
+    flex: 1; /* flex-grow -> make sure that the elements fill out the flex box  */
+}
+
+.box {
+    border: 0.1px solid black;
+    flex: 1; /* flex-grow -> make sure that the elements fill out the flex box  */
+}
+
+
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.box.active {
+    background-color: antiquewhite;
+}
+
+.reset-btn {
+    /* Center the button in the middle of the page and make it 15% of the view port */
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 10%;
+    height: 5%;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    cursor: pointer;
+    max-width: 10%;
+    min-width: inherit;
+    max-height: 5%;
+    min-height: 5%;
+}
+
+.create-grid-btn {
+    position: absolute;
+    left: 50%;
+    top: 16%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 15%;
+    height: 5%;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    cursor: pointer;
+    max-width: 15%;
+    min-width: inherit;
+    max-height: 5%;
+    min-height: 5%;
+}
